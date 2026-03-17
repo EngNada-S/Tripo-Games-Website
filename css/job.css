@@ -1,0 +1,130 @@
+/* =================================== */
+/*               Job Page              */
+/* =================================== */
+
+/* ========== Job application ========== */
+.job-application {
+    min-height: 100vh;
+    padding-block: 150px 50px;
+    background: linear-gradient(#272443a8, #272443a8),
+        url("../assets/images/Careers/job-backg.webp") no-repeat fixed center/cover;
+}
+
+.job-data {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.job-data p {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.job-data p:first-child {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.job-data h1 {
+    font-size: 50px;
+    font-family: var(--font-family);
+    color: white;
+}
+
+.job-data #open-form {
+    width: fit-content;
+    margin-top: 40px;
+}
+
+/* ========== Job description ========== */
+.description-content {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: -13%;
+}
+
+.description-content>div {
+    padding: 100px 70px;
+}
+
+.description-content>div h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.description-content>div:first-child {
+    background-color: var(--main-color);
+}
+
+.description-content>div:last-child {
+    background-color: white;
+}
+
+.description-content>div:first-child h2,
+.description-content>div:first-child ul li {
+    color: white;
+}
+
+.description-content>div:last-child h2,
+.description-content>div:last-child ul li {
+    color: var(--text-color);
+}
+
+.description-content li {
+    font-size: 18px;
+    margin-bottom: 17px;
+    display: flex;
+    gap: 8px;
+}
+
+@media(max-width:991px) {
+    .job-application {
+        min-height: fit-content;
+        padding-block: 150px 50px;
+    }
+
+    .description-content {
+        margin-top: 0;
+    }
+
+    .description-content>div {
+        padding: 50px;
+    }
+}
+
+@media(max-width:767px) {
+    .job-application {
+        padding-block: 120px 70px;
+    }
+
+    .job-data p {
+        font-size: 16;
+    }
+
+    .job-data p:first-child {
+        font-size: 18px;
+    }
+
+    .job-data h1 {
+        font-size: 30px;
+    }
+
+    .description-content {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+    .description-content>div {
+        padding: 30px 15px;
+    }
+
+    .description-content>div h2 {
+        font-size: 24px;
+    }
+
+    .description-content li {
+        font-size: 16px;
+    }
+}
